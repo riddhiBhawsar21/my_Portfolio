@@ -1,4 +1,4 @@
-import "./Projects.css";
+import "../../styles/global.css";
 import { useEffect } from "react";
 
 function Projects() {

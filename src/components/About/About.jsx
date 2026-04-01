@@ -1,5 +1,5 @@
 import React from "react";
-import "./About.css";
+import "../../styles/global.css";
 import profile from "../../assets/meri.jpg"; // make sure this path is correct
 import { FaGithub, FaLinkedin, FaInstagram } from "react-icons/fa";
 import resume from "../../assets/Riddhi_Bhawsar_ResumeM.pdf";

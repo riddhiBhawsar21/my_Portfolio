@@ -1,4 +1,4 @@
-import "./Contact.css";
+import "../../styles/global.css";
 import { FaGithub, FaLinkedin, FaInstagram, FaEnvelope } from "react-icons/fa";
 
 function Contact() {

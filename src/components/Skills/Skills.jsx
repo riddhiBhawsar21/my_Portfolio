@@ -1,4 +1,4 @@
-import "./Skills.css";
+import "../../styles/global.css";
 import { FaNodeJs, FaReact, FaHtml5, FaCss3Alt, FaJs } from "react-icons/fa";
 import { SiMongodb, SiExpress, SiCplusplus } from "react-icons/si";
 
