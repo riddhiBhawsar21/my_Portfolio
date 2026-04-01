@@ -1,0 +1,48 @@
+.navbar{
+  position: fixed;
+  top:0;
+  width:100%;
+  display:flex;
+  justify-content:space-between;
+  align-items:center;
+  padding:15px 60px;
+  background:#1e293b;
+  color:white;
+ height: 20px;
+}
+
+/* Riddhi text */
+.logo-text{
+  font-size:22px;
+  font-weight:bold;
+}
+
+/* navbar menu */
+.nav-links{
+  display:flex;
+  gap:10px;
+  list-style:none;
+  margin-right:100px;
+  font-size:15px;
+}
+
+.nav-links li{
+  cursor:pointer;
+}
+/* Links */
+.nav-links a {
+  text-decoration: none !important;   /* remove underline */
+  color: white !important;           /* force white color */
+  font-size: 16px;
+  transition: 0.3s;
+}
+
+/* Also remove purple visited color */
+.nav-links a:visited {
+  color: white;
+}
+
+/* Hover effect (optional) */
+.nav-links a:hover {
+  color: #38bdf8;   /* nice blue on hover */
+}
