@@ -1,35 +1,80 @@
-import Navbar from "./components/Navbar/Navbar";
-import About from "./components/About/About";
-import Aboutme from "./components/Aboutme/Aboutme";
-import Skills from "./components/Skills/Skills";
-import Projects from "./components/Projects/Projects";
-import Contact from "./components/Contact/Contact";
-
+import { motion, AnimatePresence } from "framer-motion";
+import Navbar from "./Pages/Navbar";
+import About from "./Pages/About";
+import Aboutme from "./Pages/Aboutme";
+import Skills from "./Pages/Skills";
+import Projects from "./Pages/Projects";
+import Contact from "./Pages/Contact";
 function App() {
+  const pageVariants = {
+    initial: { opacity: 0, y: 30 },
+    animate: { opacity: 1, y: 0 },
+    exit: { opacity: 0, y: -30 }
+  };
+
   return (
-    <>
+    <div className="portfolio-app">
       <Navbar />
 
-      <section id="home">
-        <About />
-      </section>
+      <AnimatePresence mode="wait">
+        <main>
+          <motion.section 
+            id="home"
+            initial="initial"
+            whileInView="animate"
+            viewport={{ once: true, amount: 0.2 }}
+            transition={{ duration: 0.8 }}
+            variants={pageVariants}
+          >
+            <About />
+          </motion.section>
 
-      <section id="about">
-        <Aboutme />
-      </section>
+          <motion.section 
+            id="about"
+            initial="initial"
+            whileInView="animate"
+            viewport={{ once: true, amount: 0.2 }}
+            transition={{ duration: 0.8 }}
+            variants={pageVariants}
+          >
+            <Aboutme />
+          </motion.section>
 
-      <section id="skills">
-        <Skills />
-      </section>
+          <motion.section 
+            id="skills"
+            initial="initial"
+            whileInView="animate"
+            viewport={{ once: true, amount: 0.2 }}
+            transition={{ duration: 0.8 }}
+            variants={pageVariants}
+          >
+            <Skills />
+          </motion.section>
 
-      <section id="projects">
-        <Projects />
-      </section>
+          <motion.section 
+            id="projects"
+            initial="initial"
+            whileInView="animate"
+            viewport={{ once: true, amount: 0.2 }}
+            transition={{ duration: 0.8 }}
+            variants={pageVariants}
+          >
+            <Projects />
+          </motion.section>
 
-      <section id="contact">
-        <Contact />
-      </section>
-    </>
+          <motion.section 
+            id="contact"
+            initial="initial"
+            whileInView="animate"
+            viewport={{ once: true, amount: 0.2 }}
+            transition={{ duration: 0.8 }}
+            variants={pageVariants}
+          >
+            <Contact />
+          </motion.section>
+        </main>
+      </AnimatePresence>
+    </div>
   );
 }
 
