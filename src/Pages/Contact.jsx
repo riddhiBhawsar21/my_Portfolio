@@ -1,6 +1,6 @@
 import React from "react";
 import { motion } from "framer-motion";
-import { FaPhone, FaEnvelope, FaMapMarkerAlt, FaPaperPlane } from "react-icons/fa";
+import { FaPhone, FaEnvelope, FaMapMarkerAlt, FaPaperPlane, FaGithub, FaLinkedin } from "react-icons/fa";
 import Button from "../components/UI/Button";
 
 function Contact() {
@@ -36,7 +36,25 @@ function Contact() {
             <div className="info-icon"><FaPhone /></div>
             <div className="info-text">
               <h4 className="serif-text">Phone</h4>
-              <p>+91 1234567890</p>
+              <p>+91 7223956021</p>
+            </div>
+          </div>
+          <div className="info-item">
+            <div className="info-icon"><FaGithub /></div>
+            <div className="info-text">
+              <h4 className="serif-text">GitHub</h4>
+              <a href="https://github.com/riddhiBhawsar21" target="_blank" rel="noreferrer" style={{ color: 'inherit', textDecoration: 'none' }}>
+                github.com/riddhiBhawsar21
+              </a>
+            </div>
+          </div>
+          <div className="info-item">
+            <div className="info-icon"><FaLinkedin /></div>
+            <div className="info-text">
+              <h4 className="serif-text">LinkedIn</h4>
+              <a href="https://www.linkedin.com/in/riddhi-bhawsar-017a18251/" target="_blank" rel="noreferrer" style={{ color: 'inherit', textDecoration: 'none' }}>
+                linkedin.com/in/riddhi-bhawsar
+              </a>
             </div>
           </div>
           <div className="info-item">
