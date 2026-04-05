@@ -27,21 +27,11 @@ function About() {
           </div>
         </div>
 
-        <div className="hero-right" style={{ flex: "1 1 500px", padding: "0 1rem" }}>
-          <div className="mern-badge" style={{
-            display: "inline-block", background: "rgba(255, 182, 193, 0.1)",
-            border: "1px solid rgba(255, 182, 193, 0.3)", color: "#ffb6c1",
-            padding: "8px 18px", borderRadius: "30px", fontSize: "0.9rem",
-            fontWeight: "600", letterSpacing: "1px", marginBottom: "15px", marginTop: "60px",
-            boxShadow: "0 4px 15px rgba(255, 182, 193, 0.15)"
-          }}>
-            MERN Stack Developer
-          </div>
-          
+        <div className="hero-right" style={{ flex: "1 1 500px", padding: "0 1rem", paddingTop: "3rem" }}>
           <h1 className="hero-title" style={{ 
             fontSize: "clamp(2.5rem, 4vw, 3.8rem)",
             fontWeight: "700",
-            marginBottom: "1rem",
+            marginBottom: "2rem",
             background: "linear-gradient(135deg, #FFF 0%, #ffb6c1 100%)", 
             WebkitBackgroundClip: "text", 
             WebkitTextFillColor: "transparent", 
