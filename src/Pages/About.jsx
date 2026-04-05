@@ -6,35 +6,26 @@ import resume from "../assets/Riddhi_Bhawsar_ResumeM.pdf";
 
 function About() {
   return (
-    <section className="hero" style={{ 
-      padding: "2rem 0", 
-      position: "relative",
-      minHeight: "auto"
-    }}>
+    <section className="hero" style={{ padding: "4rem 0", position: "relative" }}>
       <div className="hero-content" style={{ 
         display: "flex", 
         flexWrap: "wrap", 
         alignItems: "center", 
-        gap: "2rem",
+        gap: "3rem", 
+        justifyContent: "space-between",
         maxWidth: "1200px",
         margin: "0 auto",
-        padding: "0 1rem",
-        justifyContent: "center"
+        padding: "0 2rem"
       }}>
         
         <div className="hero-left" style={{ 
-          flex: "1 1 300px", 
+          flex: "1 1 350px", 
           display: 'flex', 
           flexDirection: 'column', 
           alignItems: 'center',
-          order: 2
+          marginRight: "2rem"
         }}>
-          <div style={{ 
-            display: 'flex', 
-            justifyContent: 'center', 
-            marginBottom: '2rem', 
-            background: 'transparent' 
-          }}>
+          <div style={{ display: 'flex', justifyContent: 'center', marginBottom: '2rem', background: 'transparent' }}>
             <img 
               src={profile} 
               alt="Riddhi Bhawsar" 
@@ -42,7 +33,6 @@ function About() {
               style={{
                 width: "280px", 
                 height: "350px", 
-                maxWidth: "100%",
                 objectFit: "cover", 
                 border: "4px solid rgba(255,182,193,0.4)",
                 boxShadow: "0 15px 40px rgba(255, 182, 193, 0.25), inset 0 0 20px rgba(255,255,255,0.2)",
@@ -53,16 +43,15 @@ function About() {
         </div>
 
         <div className="hero-right" style={{ 
-          flex: "1 1 400px", 
-          padding: "0 1rem", 
-          paddingTop: "1rem",
-          order: 1,
-          textAlign: "center"
+          flex: "1 1 500px", 
+          padding: "0 1rem",
+          marginLeft: "2rem",
+          marginTop: "4rem"
         }}>
           <h1 className="hero-title" style={{ 
-            fontSize: "clamp(2rem, 5vw, 3.8rem)",
+            fontSize: "clamp(2.5rem, 4vw, 3.8rem)",
             fontWeight: "700",
-            marginBottom: "1.5rem",
+            marginBottom: "1rem",
             background: "linear-gradient(135deg, #FFF 0%, #ffb6c1 100%)", 
             WebkitBackgroundClip: "text", 
             WebkitTextFillColor: "transparent", 
@@ -71,12 +60,7 @@ function About() {
             About Riddhi
           </h1>
 
-          <div className="hero-description" style={{ 
-            color: "#d1d1d1", 
-            fontSize: "clamp(0.95rem, 2vw, 1.05rem)", 
-            lineHeight: "1.7",
-            textAlign: "left"
-          }}>
+          <div className="hero-description" style={{ color: "#d1d1d1", fontSize: "1.05rem", lineHeight: "1.7" }}>
             <p style={{ 
               fontStyle: "italic", marginBottom: "25px", opacity: 0.85, 
               borderLeft: "3px solid #ffb6c1", paddingLeft: "15px", background: "rgba(255,255,255,0.02)", padding: "10px 15px", borderRadius: "0 10px 10px 0"
@@ -88,13 +72,7 @@ function About() {
             </p>
           </div>
 
-          <div className="hero-cta" style={{ 
-            display: "flex", 
-            gap: "15px", 
-            flexWrap: "wrap", 
-            marginTop: "25px",
-            justifyContent: "center"
-          }}>
+          <div className="hero-cta" style={{ display: "flex", gap: "15px", flexWrap: "wrap", marginTop: "25px" }}>
             <Button
               variant="primary"
               onClick={() => {
@@ -129,12 +107,7 @@ function About() {
             </a>
           </div>
 
-          <div className="social-links" style={{ 
-            display: "flex", 
-            gap: "15px", 
-            marginTop: "25px",
-            justifyContent: "center"
-          }}>
+          <div className="social-links" style={{ display: "flex", gap: "15px", marginTop: "25px" }}>
             <a 
               href="https://github.com/riddhiBhawsar21" 
               target="_blank" rel="noreferrer" 
